@@ -8,18 +8,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".User_Report" >
 
-    <TextView
-       
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+   
 
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
         android:layout_marginTop="20dp" >
 
         <TableRow
@@ -45,9 +38,9 @@
                      android:textSize="25dp"
                     android:id="@+id/usenameValue"
                     android:background="@drawable/boder"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/hello_world" />
+                    android:text="hw" />
             </LinearLayout>
         </TableRow>
 
@@ -74,9 +67,9 @@
                      android:textSize="25dp"
                     android:id="@+id/ageValue"
                     android:background="@drawable/boder"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/hello_world" />
+                    android:text="hw" />
             </LinearLayout>
         </TableRow>
 
@@ -94,6 +87,7 @@
                 <TextView
                      android:textSize="25dp"
                     android:id="@+id/weight"
+                    android:background="@drawable/boder"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
                     android:text="Weight :" />
@@ -101,9 +95,10 @@
                 <TextView
                      android:textSize="25dp"
                     android:id="@+id/weightValue"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
+                    android:background="@drawable/boder"
                     android:layout_height="wrap_content"
-                    android:text="@string/hello_world" />
+                    android:text="hw" />
             </LinearLayout>
         </TableRow>
 
@@ -120,15 +115,17 @@
                     android:id="@+id/height"
                      android:textSize="25dp"
                     android:layout_width="130dp"
+                    android:background="@drawable/boder"
                     android:layout_height="wrap_content"
                     android:text="Health" />
 
                 <TextView
                     android:id="@+id/heightValue"
                      android:textSize="25dp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/hello_world" />
+                    android:background="@drawable/boder"
+                    android:text="hw" />
             </LinearLayout>
         </TableRow>
         <TableRow
@@ -144,17 +141,117 @@
                     android:id="@+id/calorie"
                      android:textSize="25dp"
                     android:layout_width="130dp"
+                    android:background="@drawable/boder"
                     android:layout_height="wrap_content"
                     android:text="Calories:" />
 
                 <TextView
                     android:id="@+id/calorieValue"
                      android:textSize="25dp"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
+                    android:background="@drawable/boder"
                     android:layout_height="wrap_content"
-                    android:text="@string/hello_world" />
+                    android:text="hw" />
+            </LinearLayout>
+        </TableRow>
+         <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/bmr"
+                     android:textSize="25dp"
+                    android:layout_width="130dp"
+                    android:background="@drawable/boder"
+                    android:layout_height="wrap_content"
+                    android:text="BMR:" />
+
+                <TextView
+                    android:id="@+id/bmrValue"
+                     android:textSize="25dp"
+                    android:layout_width="100dp"
+                    android:background="@drawable/boder"
+                    android:layout_height="wrap_content"
+                    android:text="hw" />
+            </LinearLayout>
+        </TableRow>
+         <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/stomp"
+                     android:textSize="25dp"
+                    android:layout_width="130dp"
+                    android:background="@drawable/boder"
+                    android:layout_height="wrap_content"
+                    android:text="No_Action:" />
+
+                <TextView
+                    android:id="@+id/stompValue"
+                     android:textSize="25dp"
+                    android:layout_width="100dp"
+                    android:background="@drawable/boder"
+                    android:layout_height="wrap_content"
+                    android:text="hw" />
+            </LinearLayout>
+        </TableRow>
+             <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/calburn"
+                     android:textSize="25dp"
+                    android:layout_width="130dp"
+                    android:background="@drawable/boder"
+                    android:layout_height="wrap_content"
+                    android:text="Cal Burnt:" />
+
+                <TextView
+                    android:id="@+id/calburnValue"
+                     android:textSize="25dp"
+                    android:layout_width="100dp"
+                    android:background="@drawable/boder"
+                    android:layout_height="wrap_content"
+                    android:text="hw" />
+            </LinearLayout>
+        </TableRow>
+         <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+              <ImageView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/achievement_button" />
             </LinearLayout>
         </TableRow>
     </TableLayout>
+
+    
 
 </RelativeLayout>

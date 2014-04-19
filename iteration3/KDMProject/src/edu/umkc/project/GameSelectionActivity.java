@@ -11,6 +11,8 @@ import android.content.IntentFilter;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class GameSelectionActivity extends Activity {
@@ -19,6 +21,15 @@ public class GameSelectionActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_game_selection);
+		Button b = (Button) findViewById(R.id.buttonHealth);
+		b.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				Intent i = new Intent(getApplicationContext(),ReportActivity.class);
+				i.putExtra("username", getIntent().getCharSequenceExtra("username"));
+				startActivity(i);
+			}
+		});
 	}
 
 	@Override
@@ -36,6 +47,7 @@ public class GameSelectionActivity extends Activity {
 			@Override
 			public void onClick(View view) {
 				Intent reportPage = new Intent(GameSelectionActivity.this,MainActivity.class);
+				
 				startActivity(reportPage);
 			}
 		});

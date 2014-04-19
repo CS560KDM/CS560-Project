@@ -61,6 +61,7 @@ public class LoginDataBaseAdapter
              else
             	 bmr = (float)(66 + ( 6.23 * weightInt  ) + ( 12.7 * heightInt ) - ( 6.8 * ageInt));
              newValues.put("BMR",bmr);
+             newValues.put("STOMP","0");
             // Insert the row into your table
             db.insert("LOGIN", null, newValues);
             ///Toast.makeText(context, "Reminder Is Successfully Saved", Toast.LENGTH_LONG).show();
@@ -87,13 +88,13 @@ public class LoginDataBaseAdapter
             cursor.close();
             return password;                
         }
-        public void  updateEntry(String userName,String password)
-        {
+        public void  updateEntry(String userName,String columnName, String columnValue)
+        {//"USERNAME","PASSWORD","AGE","WEIGHT","HEIGHT","CALORIES"
             // Define the updated row content.
             ContentValues updatedValues = new ContentValues();
             // Assign values for each row.
             updatedValues.put("USERNAME", userName);
-            updatedValues.put("PASSWORD",password);
+            updatedValues.put(columnName,columnValue);
  
             String where="USERNAME = ?";
             db.update("LOGIN",updatedValues, where, new String[]{userName});               
